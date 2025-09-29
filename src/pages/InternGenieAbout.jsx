@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MainLogo from '../assets/Mainlogo.png';
+import MainLogo from '../assets/MainLogo.png';
 
 
 const InternGenieAbout = () => {
