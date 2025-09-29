@@ -114,6 +114,8 @@ const InternGenieRecommendations = () => {
           </div>
         ))}
         <button className="skill-recommend"><Link to="/interngenie/Skills">Skill Recommendations</Link></button>
+
+        <button className="resume-enhancer-btn"><Link to="/interngenie/resume-enhancer">✨ Enhance Your Current Resume</Link></button>
       </main>
     </div>
   );

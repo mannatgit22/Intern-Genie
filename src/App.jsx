@@ -11,6 +11,7 @@ import InternGenieSkills from './pages/InternGenieSkills';
 import InternGenieProgress from './pages/InternGenieProgress';
 import InternGenieReport from './pages/InternGenieReport';
 import InternGenieDiscussion from './pages/InternGenieDiscussion';
+import ResumeEnhancer from './pages/ResumeEnhancer';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/interngenie/help" element={<InternGenieHelp />} />
         <Route path="/interngenie/about" element={<InternGenieAbout />} />
         <Route path="/interngenie/discussion" element={<InternGenieDiscussion />} />
+        <Route path="/interngenie/resume-enhancer" element={<ResumeEnhancer />} />
       </Routes>
     </Router>
   );

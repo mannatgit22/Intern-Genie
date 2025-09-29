@@ -1463,7 +1463,15 @@ body {
   border-radius: 8px;
   padding: 20px;
   margin-top: 30px;
-  transform:translateX(45vh);
+  
+}
+.resume-enhancer-btn{
+  background: #d4edda;
+  border: 2px solid var(--success-green);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  float:right
 }
 
 .discussion-btn :hover{
@@ -1689,4 +1697,150 @@ body {
   height: 28px;
   width: 28px;
   font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .discussion-page {
+    padding: 15px;
+  }
+  .post-box textarea {
+    height: 70px;
+  }
+  .post-box button {
+    padding: 8px 20px;
+  }
+  .post-header {
+    gap: 8px;
+  }
+  .author-avatar {
+    height: 35px;
+    width: 35px;
+    font-size: 0.9rem;
+  }
+  .author-info h2 {
+    font-size: 0.95rem;
+  }
+  .post-message {
+    font-size: 0.95rem;
+  }
+  .reply-box textarea {
+    height: 50px;
+  }
+  .reply-box button {
+    padding: 5px 14px;
+  }
+  .replies {
+    padding-left: 40px; 
+  }
+  .author-avatar.small {
+    height: 24px;
+    width: 24px;
+    font-size: 0.75rem;
+  }
+}
+/* Resume Enhancer */
+.resume-enhancer {
+  min-width: 1400px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.resume-enhancer h1 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.resume-enhancer .subtitle {
+  color: #ff1414;
+  margin-bottom: 30px;
+}
+
+.resume-comparison {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Resume Cards */
+.resume-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 650px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.resume-card.current {
+  border: 2px solid #ff7f24; /* orange for old resume */
+}
+
+.resume-card.enhanced {
+  border: 2px solid #1a4b8c; /* blue for enhanced */
+}
+
+.resume-card h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.resume-card h4 {
+  margin: 10px 0 5px;
+  color: #1a4b8c;
+}
+
+.resume-card ul {
+  margin: 0 0 10px 20px;
+  padding: 0;
+}
+
+.resume-card p {
+  margin: 3px 0;
+}
+
+/* Arrow */
+.arrow {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  align-self: center;
+}
+
+.resume-btn-container {
+  margin-top: 30px;
+  display: flex;               /* Flex container to align buttons */
+  justify-content: center;     /* Center buttons horizontally */
+  gap: 250px;                   /* Space between buttons */
+  flex-wrap: wrap;             /* Wrap on smaller screens */
+}
+
+.resume-btn {
+  background: linear-gradient(135deg, #000000 0%, #3b2d2d 100%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 180px;           
+  text-align: center;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
