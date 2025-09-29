@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Operator from '../assets/Operator.png';
+import Operator from '../assets/operator.png';
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState('current');
